@@ -1,0 +1,2 @@
+# pigmenta
+dominant color picker
