@@ -6,6 +6,9 @@
 
 Pigmenta is a simple desktop application built with Python to help you discover the three most dominant colors in any image. The app uses the K-Means algorithm to analyze the image's pixels and identify the most prominent color palette, which you can then save to your computer.
 
+[Pigmenta-screenshots-1](./screenshots/pigmenta-ss-1.png)
+[Pigmenta-screenshots-2](./screenshots/pigmenta-ss-2.png)
+
 ## Key Features
 
 - Select an Image: Easily upload any image from your computer.
