@@ -11,6 +11,9 @@ Pigmenta is a simple desktop application built with Python to help you discover 
   <img src="./screenshots/pigmenta-ss-2.png" alt="Pigmenta-SS-2" width="350"/>
 </p>
 
+[![Watch the demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)](https://youtu.be/fX4X44w1me8)
+Pigmenta Demo 
+
 ## Key Features
 
 - Select an Image: Easily upload any image from your computer.
