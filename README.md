@@ -8,6 +8,7 @@ Pigmenta is a simple desktop application built with Python to help you discover 
 
 <p align="left">
   <img src="./screenshots/pigmenta-ss-1.png" alt="Pigmenta-SS-1" width="350"/>
+  <img src="./screenshots/pigmenta-ss-2.png" alt="Pigmenta-SS-2" width="350"/>
 </p>
 
 ## Key Features
