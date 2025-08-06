@@ -7,17 +7,19 @@ class MainMenu(ctk.CTkFrame):
         super().__init__(master)
         self.master = master
 
-        # Load logo
+        main_frame = ctk.CTkFrame(self, fg_color="transparent")
+        main_frame.pack(expand=True, fill="both")
+
         logo_img = Image.open("assets/logo-pigmenta.png")
+
+        logo_img.thumbnail((400, 400), Image.Resampling.LANCZOS)
         logo_photo = ImageTk.PhotoImage(logo_img)
-        logo_label = ctk.CTkLabel(self, image=logo_photo, text="")
-        logo_label.image = logo_photo  # Keep a reference!
-        logo_label.pack(pady=20)
+        logo_label = ctk.CTkLabel(main_frame, image=logo_photo, text="")
+        logo_label.image = logo_photo  
+        logo_label.pack(pady=(240, 20))  
 
-
-        # Select Image Button
-        self.select_button = ctk.CTkButton(self, text="Select Image", command=self.on_select_image)
-        self.select_button.pack(pady=20)
+        self.select_button = ctk.CTkButton(main_frame, text="Select Image", command=self.on_select_image)
+        self.select_button.pack(pady=0)
 
     def on_select_image(self):
         from tkinter import filedialog
@@ -25,5 +27,5 @@ class MainMenu(ctk.CTkFrame):
         if file_path:
             print(f"Image selected: {file_path}")
             self.load_screen = LoadScreen(self.master, file_path)
-            self.pack_forget()  # Hide main menu
+            self.pack_forget()  
             self.load_screen.pack(fill="both", expand=True)
