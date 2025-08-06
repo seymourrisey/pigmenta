@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from PIL import Image, ImageTk
 from gui.load_screen import LoadScreen
+from utils import resource_path
 
 class MainMenu(ctk.CTkFrame):
     def __init__(self, master):
@@ -10,7 +11,7 @@ class MainMenu(ctk.CTkFrame):
         main_frame = ctk.CTkFrame(self, fg_color="transparent")
         main_frame.pack(expand=True, fill="both")
 
-        logo_img = Image.open("assets/logo-pigmenta.png")
+        logo_img = Image.open(resource_path("assets/logo-pigmenta.png"))
 
         logo_img.thumbnail((400, 400), Image.Resampling.LANCZOS)
         logo_photo = ImageTk.PhotoImage(logo_img)

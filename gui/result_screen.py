@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import numpy as np
 from sklearn.cluster import KMeans
 from tkinter import filedialog
+from utils import resource_path
 
 def hex_to_rgb(hex_str):
     """Konversi hex string (tanpa '#') ke tuple RGB."""
@@ -22,7 +23,7 @@ class ResultScreen(ctk.CTkFrame):
         main_frame.pack(expand=True, fill="both", padx=20, pady=20)
 
         # Logo Pigmenta
-        logo_img = Image.open("assets/logo-pigmenta.png")
+        logo_img = Image.open(resource_path("assets/logo-pigmenta.png"))
         logo_img.thumbnail((200, 200), Image.Resampling.LANCZOS)
         logo_photo = ImageTk.PhotoImage(logo_img)
         logo_label = ctk.CTkLabel(main_frame, image=logo_photo, text="")

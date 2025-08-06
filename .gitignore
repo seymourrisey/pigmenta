@@ -2,3 +2,4 @@ venv/
 .env/
 .envrc
 __pycache__/
+.spec
