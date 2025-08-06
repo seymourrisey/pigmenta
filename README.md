@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/logo-pigmenta.png" alt="MumunLogo" width="150"/>
+  <img src="./assets/logo-pigmenta.png" alt="MumunLogo" width="400"/>
 </p>
 
 # Pigmenta
