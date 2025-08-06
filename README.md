@@ -1,13 +1,14 @@
 <p align="center">
-  <img src="./assets/logo-pigmenta.png" alt="MumunLogo" width="400"/>
+  <img src="./assets/logo-pigmenta.png" alt="Pigmenta-logo" width="400"/>
 </p>
 
 # Pigmenta
 
 Pigmenta is a simple desktop application built with Python to help you discover the three most dominant colors in any image. The app uses the K-Means algorithm to analyze the image's pixels and identify the most prominent color palette, which you can then save to your computer.
 
-[Pigmenta-screenshots-1](./screenshots/pigmenta-ss-1.png)
-[Pigmenta-screenshots-2](./screenshots/pigmenta-ss-2.png)
+<p align="left">
+  <img src="./screenshots/pigmenta-ss-1.png" alt="Pigmenta-SS-1" width="350"/>
+</p>
 
 ## Key Features
 
