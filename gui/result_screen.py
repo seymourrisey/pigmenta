@@ -16,10 +16,8 @@ class ResultScreen(ctk.CTkFrame):
         self.master = master
         self.file_path = file_path
 
-        
         self.configure(fg_color="#2f2f2f")
 
-        
         main_frame = ctk.CTkFrame(self, fg_color="transparent")
         main_frame.pack(expand=True, fill="both", padx=20, pady=20)
 
