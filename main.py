@@ -1,16 +1,17 @@
-from kivy.app import App
-from kivy.uix.screenmanager import ScreenManager, Screen
-from screens.main_menu import MainMenuScreen
-from screens.result_screen import ResultScreen
+import customtkinter as ctk
+from gui.main_menu import MainMenu
 
+ctk.set_appearance_mode("Dark")
+ctk.set_default_color_theme("blue")
 
-class PigmentaApp(App):
-    def build(self):
-        sm = ScreenManager()
-        sm.add_widget(MainMenuScreen(name='main_menu'))
-        sm.add_widget(ResultScreen(name='result_screen'))
-        return sm
+class PigmentaApp(ctk.CTk):
+    def __init__(self):
+        super().__init__()
+        self.title("Pigmenta")
+        self.geometry("800x600")
+        self.main_menu = MainMenu(self)
+        self.main_menu.pack(fill="both", expand=True)
 
-
-if __name__ == '__main__':
-    PigmentaApp().run()
+if __name__ == "__main__":
+    app = PigmentaApp()
+    app.mainloop()
